@@ -1,4 +1,6 @@
-﻿namespace Listes
+﻿using System.Collections.Generic;
+
+namespace Listes
 {
     internal class Program
     {
@@ -17,6 +19,21 @@
             {
                 Console.WriteLine(str);
             }
+
+            DictionaryExample();
+
         }
+
+        public static void DictionaryExample()
+        {
+            Dictionary<char,string> diction = new Dictionary<char, string>();
+            diction.Add('a',"apple");
+            diction.Add('b',"banana");
+            diction.Add('c', "citron");
+            diction.Remove('c');
+            Console.WriteLine(diction.Count);
+
+        }
+
     }
 }
